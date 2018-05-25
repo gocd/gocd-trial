@@ -1,0 +1,45 @@
+##|16:41:58.161 [go] Job Started: 2018-05-25 16:41:58 GMT
+##|16:41:58.161 
+pr|16:41:58.161 [go] Start to prepare Test/1/defaultStage/1/defaultJob on 5851d49c190d [/go]
+pr|16:41:58.188 [go] Start to update materials.
+pr|16:41:58.188 
+pr|16:41:58.193 [go] Start updating files at revision 66d6927017afa3e3ed3c0c695da67e2733c709b6 from https://github.com/arvindsv/faketime.git
+pe|16:41:58.218 STDERR: Cloning into '/go/pipelines/Test'...
+pr|16:41:58.920 [GIT] Fetching changes
+pr|16:41:59.164 [GIT] Performing git gc
+pr|16:41:59.269 [GIT] Reset working directory pipelines/Test
+pr|16:41:59.270 [GIT] Cleaning all unversioned files in working copy
+pr|16:41:59.482 [GIT] Cleaning submodule configurations in .git/config
+pr|16:41:59.591 [GIT] Updating working copy to revision 66d6927017afa3e3ed3c0c695da67e2733c709b6
+pr|16:41:59.595 HEAD is now at 66d6927 Reformat README for line length
+pr|16:41:59.696 [GIT] Removing modified files in submodules
+pr|16:41:59.831 [GIT] Cleaning all unversioned files in working copy
+pr|16:42:00.043 [go] Done.
+pr|16:42:00.043 
+pr|16:42:00.045 [go] overriding environment variable 'GO_SERVER_URL' with value 'https://server:8154/go'
+pr|16:42:00.045 [go] setting environment variable 'GO_TRIGGER_USER' to value 'changes'
+pr|16:42:00.046 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'Test'
+pr|16:42:00.046 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '1'
+pr|16:42:00.046 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '1'
+pr|16:42:00.046 [go] setting environment variable 'GO_STAGE_NAME' to value 'defaultStage'
+pr|16:42:00.046 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+pr|16:42:00.046 [go] setting environment variable 'GO_JOB_NAME' to value 'defaultJob'
+pr|16:42:00.046 [go] setting environment variable 'GO_REVISION' to value '66d6927017afa3e3ed3c0c695da67e2733c709b6'
+pr|16:42:00.046 [go] setting environment variable 'GO_TO_REVISION' to value '66d6927017afa3e3ed3c0c695da67e2733c709b6'
+pr|16:42:00.047 [go] setting environment variable 'GO_FROM_REVISION' to value '66d6927017afa3e3ed3c0c695da67e2733c709b6'
+pr|16:42:00.047 [go] setting environment variable 'GO_MATERIAL_HAS_CHANGED' to value 'true'
+pr|16:42:00.047 
+##|16:42:00.064 [go] Start to build Test/1/defaultStage/1/defaultJob on 5851d49c190d [/go]
+!!|16:42:00.067 [go] Task: ls
+&1|16:42:00.083 FakeTimeTest.java
+&1|16:42:00.083 README.md
+&1|16:42:00.085 lib
+&1|16:42:00.085 src
+&1|16:42:00.086 test_linux.sh
+&1|16:42:00.087 test_linux_64.sh
+&1|16:42:00.087 test_mac.sh
+?0|16:42:00.191 [go] Task status: passed (116 ms)
+j0|16:42:00.210 [go] Current job status: passed
+##|16:42:00.222 [go] Start to create properties Test/1/defaultStage/1/defaultJob on 5851d49c190d [/go]
+ar|16:42:00.222 [go] Start to upload Test/1/defaultStage/1/defaultJob on 5851d49c190d [/go]
+ex|16:42:00.319 [go] Job completed Test/1/defaultStage/1/defaultJob on 5851d49c190d [/go]

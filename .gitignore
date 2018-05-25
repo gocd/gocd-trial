@@ -6,3 +6,12 @@ config/jetty.xml
 config/keystore
 config/logback-include.xml
 config/truststore
+
+data/db/h2db/cruise.trace.db
+data/db/h2db/cruise.lock.db
+data/db/
+
+data/logs/
+
+data/plugins/bundled/
+data/plugins/go-plugins-all.zip
