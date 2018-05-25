@@ -1,0 +1,8 @@
+config/cipher
+config/agentkeystore
+config/cruise-config.xsd
+config/go_update_server.pub
+config/jetty.xml
+config/keystore
+config/logback-include.xml
+config/truststore

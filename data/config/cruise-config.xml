@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="108">
+  <server artifactsdir="artifacts" agentAutoRegisterKey="agent-autoregister-key" webhookSecret="872a0d3b-a373-4ad6-b4be-3073f82ed32b" commandRepositoryLocation="default" serverId="c8a54748-fc46-4540-85d2-bf12e4de12dc" tokenGenerationKey="c27cfad2-5f4a-4925-b6f5-061d0c27d3e0" />
+  <pipelines group="defaultGroup">
+    <pipeline name="Test">
+      <materials>
+        <git url="https://github.com/arvindsv/faketime.git" />
+      </materials>
+      <stage name="defaultStage">
+        <jobs>
+          <job name="defaultJob">
+            <tasks>
+              <exec command="ls" />
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+    </pipeline>
+  </pipelines>
+</cruise>
