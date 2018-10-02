@@ -1,3 +1,15 @@
+*Dependencies*
+
+* Install Docker 
+* Install Docker Compose (or Docker Stack)
+* Ensure that Docker is running 
+
+Download and save docker-compose.yml
+
+Open terminal
+
+Navigate to the directory docker-compose.yml is saved in
+
 Try:
 
 ```
@@ -10,4 +22,4 @@ OR
 docker stack deploy -c docker-compose.yml gocd
 ```
 
-Then, in a little while, access http://localhost:8153
+Access http://localhost:8153
