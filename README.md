@@ -6,6 +6,8 @@
 
 Download and save https://github.com/arvindsv/gocd-starter-template-test/archive/master.zip
 
+Unzip https://github.com/arvindsv/gocd-starter-template-test/archive/master.zip
+
 Open terminal
 
 Navigate to the directory docker-compose.yml is saved in
