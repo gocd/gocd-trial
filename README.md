@@ -4,7 +4,7 @@
 * Install Docker Compose (or Docker Stack)
 * Ensure that Docker is running 
 
-Download and save gocd-starter-template-test
+Download and save https://github.com/arvindsv/gocd-starter-template-test.git
 
 Open terminal
 
