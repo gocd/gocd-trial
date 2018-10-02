@@ -10,7 +10,7 @@ Unzip https://github.com/arvindsv/gocd-starter-template-test/archive/master.zip
 
 Open terminal
 
-Navigate to the directory docker-compose.yml is saved in
+Navigate to the gocd-starter-template-test directory 
 
 Try:
 
@@ -18,7 +18,7 @@ Try:
 docker-compose up -d
 ```
 
-OR
+Or
 
 ```
 docker stack deploy -c docker-compose.yml gocd
