@@ -10,7 +10,7 @@ Table of Contents
  
 ## How to use 
 
-This tenplate is intended to be used to trial GoCD. It is *not* intended for production use. 
+This template is intended to be used to trial GoCD. It is *not* intended for production use. 
 
 Once you start the GoCD server it will show you example pipelines as well as execution data and analytics.
 
