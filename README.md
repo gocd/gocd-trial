@@ -16,7 +16,7 @@ Once you start the GoCD server it will show you example pipelines as well as exe
 
 Use this template in combination with the [GoCD documentation](https://www.gocd.org/getting-started/part-1/) to understand more about how GoCD can be configured and used to meet your needs. 
 
-If you need support while trying GoCD feel free chat to us on [Gitter](https://gitter.im/gocd/gocd) or join our [Google Group](https://groups.google.com/forum/#!forum/go-cd)
+If you need support while trying GoCD feel free chat to us on [Gitter](https://gitter.im/gocd/gocd) or join our [Google Group](https://groups.google.com/forum/#!forum/go-cd).
 
 
 ## Dependencies
