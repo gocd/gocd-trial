@@ -12,7 +12,7 @@ Open terminal
 
 Navigate to the gocd-starter-template-test directory 
 
-Try:
+To start the GoCD server type:
 
 ```
 docker-compose up -d
@@ -24,4 +24,10 @@ Or
 docker stack deploy -c docker-compose.yml gocd
 ```
 
-Access http://localhost:8153
+To access the server goto: http://localhost:8153
+
+To bring the server down type:
+
+```
+docker-compose down
+```
