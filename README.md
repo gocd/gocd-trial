@@ -67,9 +67,11 @@ Creating gocd-starter-template-test-master_agent_1  ... done
 
 Access the server by going to: http://localhost:8153
 
-You may see a "starting" message wait a few minutes for the server and agent to start. 
+You may see a "starting" message, if so, wait a few minutes for the server and agent to start. Once the server is ready to try you will see an example pipeline. 
 
-When finished to bring the server down, by typing:
+Insert image 
+
+When finished trying GoCD to bring the server down, by typing:
 
 ```
 docker-compose down
