@@ -1,9 +1,16 @@
-*Dependencies*
+Table of Contents
+=================
+
+  * [Dependencies](#dependencies)
+  * [Installation](#installation)
+ 
+## Dependencies
 
 * Install Docker 
 * Install Docker Compose (or Docker Stack)
 * Ensure that Docker is running 
 
+## Installation
 
 Open terminal
 
