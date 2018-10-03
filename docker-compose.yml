@@ -8,11 +8,7 @@ services:
       - "8154:8154"
 
     volumes:
-      - ./data/config:/godata/config
-      - ./data/db:/godata/db
-      - ./data/artifacts:/godata/artifacts
-      - ./data/logs:/godata/logs
-      - ./data/plugins:/godata/plugins
+      - ./data:/godata
       - ./data/home:/home/go
 
 
