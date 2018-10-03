@@ -21,6 +21,7 @@ If you need support while trying GoCD feel free chat to us on [Gitter](https://g
 
 ## Dependencies
 
+* Install Git 
 * Install Docker 
 * Install Docker Compose (or Docker Stack)
 * Ensure that Docker is running 
