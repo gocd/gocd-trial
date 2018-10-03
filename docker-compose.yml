@@ -11,7 +11,6 @@ services:
       - ./data:/godata
       - ./data/home:/home/go
 
-
   agent:
     image: gocd/gocd-agent-alpine-3.8:v18.9.0
 
