@@ -14,7 +14,7 @@ This tenplate is intended to be used to trial GoCD. It is *not* intended for pro
 
 Once you start the GoCD server it will show you example pipelines as well as execution data and analytics.
 
-Use this template in combination with the GoCD documentation to understand more about how GoCD can be configured and used to meet your needs. 
+Use this template in combination with the [GoCD documentation](https://www.gocd.org/getting-started/part-1/) to understand more about how GoCD can be configured and used to meet your needs. 
 
 If you need support while trying GoCD feel free to reach us at .....
 
