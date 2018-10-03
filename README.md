@@ -4,15 +4,23 @@
 * Install Docker Compose (or Docker Stack)
 * Ensure that Docker is running 
 
-Download and save https://github.com/arvindsv/gocd-starter-template-test/archive/master.zip
-
-Unzip https://github.com/arvindsv/gocd-starter-template-test/archive/master.zip
 
 Open terminal
 
-Navigate to the gocd-starter-template-test directory 
+Clone the repo, by typing:
 
-To start the GoCD server type:
+```
+git clone https://github.com/arvindsv/gocd-starter-template-test.git
+```
+
+Navigate to the template directory, by typing: 
+
+```
+cd gocd-starter-template-test
+```
+
+
+Start the GoCD server, by typing:
 
 ```
 docker-compose up -d
@@ -24,9 +32,21 @@ Or
 docker stack deploy -c docker-compose.yml gocd
 ```
 
-To access the server goto: http://localhost:8153
+The server will start and you will see 
 
-To bring the server down type:
+
+```
+Creating gocd-starter-template-test-master_server_1 ... done
+Creating gocd-starter-template-test-master_agent_1  ... done
+
+```
+
+
+Access the server by going to: http://localhost:8153
+
+You may see a "starting" message wait a few minutes for the server and agent to start. 
+
+When finished to bring the server down, by typing:
 
 ```
 docker-compose down
