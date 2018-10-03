@@ -3,10 +3,10 @@
 Table of Contents
 =================
 
-  * [How to use] (#how-to-use)
+  * [How to use](#how-to-use)
   * [Dependencies](#dependencies)
   * [Installation](#installation)
-  * [License] (#license) 
+  * [License](#license) 
  
 ## How to use 
 
