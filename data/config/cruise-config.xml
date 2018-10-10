@@ -3,6 +3,11 @@
   <server artifactsdir="artifacts" agentAutoRegisterKey="agent-autoregister-key" commandRepositoryLocation="default">
     <backup emailOnSuccess="true" emailOnFailure="true" />
   </server>
+  <config-repos>
+    <config-repo pluginId="json.config.plugin" id="demo-config-repo">
+      <git url="https://github.com/gocd-contrib/getting-started-repo" />
+    </config-repo>
+  </config-repos>
   <pipelines group="defaultGroup">
     <pipeline name="Test">
       <materials>
