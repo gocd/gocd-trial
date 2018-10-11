@@ -6,7 +6,7 @@
       "name": "TEST_NUM"
     }
                            ],
-  "group" : "pipeline_group_4",
+  "group" : "pipeline_group_1",
   "materials": [
     {
       "url": "https://github.com/arvindsv/gocd-starter-template-test.git",
