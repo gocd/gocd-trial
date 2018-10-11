@@ -6,7 +6,7 @@
       "name": "TEST_NUM"
     }
                            ],
-  "group" : "pipeline_group_1",
+  "group" : "Build_and_Deploy",
   "materials": [
     {
       "pipeline": "build_test",
