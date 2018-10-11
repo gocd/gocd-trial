@@ -9,8 +9,10 @@
   "group" : "pipeline_group_1",
   "materials": [
     {
-      "url": "https://github.com/arvindsv/gocd-starter-template-test.git",
-      "type": "git"
+      "pipeline": "build_test",
+      "stage": "build",
+      "name": "dependency_2",
+      "type": "dependency"
     }
   ],
   "stages": [
