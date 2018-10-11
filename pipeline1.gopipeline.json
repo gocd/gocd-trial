@@ -33,10 +33,7 @@
           "tasks": [
             {
               "type": "exec",
-              "command": "/bin/bash",
-              "arguments": [
-                "-c",
-                "echo $ENV_VAR_2"
+              "command": "ls"
                 ]
             }
           ]
