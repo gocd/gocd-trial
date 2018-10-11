@@ -9,7 +9,7 @@
   "group" : "pipeline_group_1",
   "materials": [
     {
-      "pipeline": "pipeline2",
+      "pipeline": "pipeline1",
       "stage": "build",
       "name": "dependency_1",
       "type": "dependency"
