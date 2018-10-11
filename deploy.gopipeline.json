@@ -1,12 +1,12 @@
-  {
-    "format_version" : 1,
+{
+  "format_version": 1,
   "name": "deploy",
-  "environment_variables": [ 
+  "environment_variables": [
     {
       "name": "TEST_NUM"
     }
-                           ],
-  "group" : "pipeline_group_1",
+  ],
+  "group": "pipeline_group_1",
   "materials": [
     {
       "pipeline": "acceptance_tests",
@@ -22,34 +22,8 @@
     }
   ],
   "stages": [
-      {
-        "name": "ready_to_deploy",
-        "fetch_materials": true,
-        "never_cleanup_artifacts": false,
-        "clean_working_directory": false,
-        "environment_variables": [],
-        "approval": {
-          "type": "manual",
-          "roles": [],
-          "users": []
-        },
-        "jobs": [
-          {
-            "name": "ready_to_deploy",
-            "environment_variables": [],
-            "tabs": [],
-            "resources": [],
-            "artifacts": [],
-            "properties": [],
-            "run_instance_count": null,
-            "timeout": 0,
-            "tasks": [
-              {
-                "type": "exec",
-                "command": "ls"
-              },
     {
-      "name": "deploy",
+      "name": "ready_to_deploy",
       "fetch_materials": true,
       "never_cleanup_artifacts": false,
       "clean_working_directory": false,
@@ -61,7 +35,7 @@
       },
       "jobs": [
         {
-          "name": "deploy",
+          "name": "ready_to_deploy",
           "environment_variables": [],
           "tabs": [],
           "resources": [],
@@ -73,6 +47,36 @@
             {
               "type": "exec",
               "command": "ls"
+            },
+            {
+              "name": "deploy",
+              "fetch_materials": true,
+              "never_cleanup_artifacts": false,
+              "clean_working_directory": false,
+              "environment_variables": [],
+              "approval": {
+                "type": "manual",
+                "roles": [],
+                "users": []
+              },
+              "jobs": [
+                {
+                  "name": "deploy",
+                  "environment_variables": [],
+                  "tabs": [],
+                  "resources": [],
+                  "artifacts": [],
+                  "properties": [],
+                  "run_instance_count": null,
+                  "timeout": 0,
+                  "tasks": [
+                    {
+                      "type": "exec",
+                      "command": "ls"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -80,20 +84,3 @@
     }
   ]
 }
-]
-}
-]
-}
-
- 
-          
-  
-
-
-
-
-
-
-
-
-
