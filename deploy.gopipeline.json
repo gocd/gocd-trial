@@ -22,8 +22,34 @@
     }
   ],
   "stages": [
+      {
+        "name": "ready_to_deploy",
+        "fetch_materials": true,
+        "never_cleanup_artifacts": false,
+        "clean_working_directory": false,
+        "environment_variables": [],
+        "approval": {
+          "type": "manual",
+          "roles": [],
+          "users": []
+        },
+        "jobs": [
+          {
+            "name": "ready_to_deploy",
+            "environment_variables": [],
+            "tabs": [],
+            "resources": [],
+            "artifacts": [],
+            "properties": [],
+            "run_instance_count": null,
+            "timeout": 0,
+            "tasks": [
+              {
+                "type": "exec",
+                "command": "ls"
+              }
     {
-      "name": "build",
+      "name": "deploy",
       "fetch_materials": true,
       "never_cleanup_artifacts": false,
       "clean_working_directory": false,
@@ -35,7 +61,7 @@
       },
       "jobs": [
         {
-          "name": "build",
+          "name": "deploy",
           "environment_variables": [],
           "tabs": [],
           "resources": [],
