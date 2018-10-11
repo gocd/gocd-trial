@@ -1,6 +1,6 @@
 {
   "format_version" : 1,
-  "name": "build_test",
+  "name": "acceptance_tests",
   "environment_variables": [ 
     {
       "name": "TEST_NUM"
