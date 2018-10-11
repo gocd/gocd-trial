@@ -15,7 +15,7 @@
       "type": "dependency"
     }
 
-    {
+    ,{
       "pipeline": "performance_tests",
       "stage": "build",
       "name": "dependency_4",
