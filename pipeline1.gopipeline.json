@@ -1,0 +1,48 @@
+{
+  "format_version" : 1,
+  "name": "firstpipe",
+  "environment_variables": [ 
+    {
+      "name": "TEST_NUM"
+    }
+                           ],
+  "group" : "configrepo-example",
+  "materials": [
+    {
+      "url": "https://github.com/ankitsri11/gocd-pipeline-as-code.git",
+      "type": "git"
+    }
+  ],
+  "stages": [
+    {
+      "name": "build",
+      "fetch_materials": true,
+      "never_cleanup_artifacts": false,
+      "clean_working_directory": false,
+      "environment_variables": [],
+      "jobs": [
+        {
+          "name": "build",
+          "environment_variables": [],
+          "tabs": [],
+          "resources": [],
+          "artifacts": [],
+          "properties": [],
+          "run_instance_count": null,
+          "timeout": 0,
+          "tasks": [
+            {
+              "type": "exec",
+              "command": "/bin/bash",
+              "arguments": [
+                "-c",
+                "echo $ENV_VAR_2"
+                ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
