@@ -34,7 +34,6 @@
             {
               "type": "exec",
               "command": "ls"
-                ]
             }
           ]
         }
