@@ -13,7 +13,6 @@
       "stage": "build",
       "name": "dependency_3",
       "type": "dependency"
-
     },
     {
       "pipeline": "performance_tests",
@@ -29,6 +28,11 @@
       "never_cleanup_artifacts": false,
       "clean_working_directory": false,
       "environment_variables": [],
+      "approval": {
+        "type": "manual",
+        "roles": [],
+        "users": []
+      },
       "jobs": [
         {
           "name": "build",
