@@ -6,7 +6,7 @@
       "name": "TEST_NUM"
     }
                            ],
-  "group" : "configrepo-example",
+  "group" : "Pipeline_group",
   "materials": [
     {
       "url": "https://github.com/ankitsri11/gocd-pipeline-as-code.git",
