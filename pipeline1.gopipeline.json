@@ -9,7 +9,7 @@
   "group" : "Pipeline_group",
   "materials": [
     {
-      "url": "https://github.com/ankitsri11/gocd-pipeline-as-code.git",
+      "url": "https://github.com/arvindsv/gocd-starter-template-test.git",
       "type": "git"
     }
   ],
