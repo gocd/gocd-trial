@@ -9,7 +9,8 @@
   "group" : "pipeline_group_1",
   "materials": [
     {
-      "pipeline": "pipeline1",
+      "pipeline": "build_test
+      ",
       "stage": "build",
       "name": "dependency_1",
       "type": "dependency"
