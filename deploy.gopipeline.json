@@ -47,34 +47,34 @@
             {
               "type": "exec",
               "command": "ls"
-            },
+            }
+          ]
+        },
+        {
+          "name": "deploy",
+          "fetch_materials": true,
+          "never_cleanup_artifacts": false,
+          "clean_working_directory": false,
+          "environment_variables": [],
+          "approval": {
+            "type": "manual",
+            "roles": [],
+            "users": []
+          },
+          "jobs": [
             {
               "name": "deploy",
-              "fetch_materials": true,
-              "never_cleanup_artifacts": false,
-              "clean_working_directory": false,
               "environment_variables": [],
-              "approval": {
-                "type": "manual",
-                "roles": [],
-                "users": []
-              },
-              "jobs": [
+              "tabs": [],
+              "resources": [],
+              "artifacts": [],
+              "properties": [],
+              "run_instance_count": null,
+              "timeout": 0,
+              "tasks": [
                 {
-                  "name": "deploy",
-                  "environment_variables": [],
-                  "tabs": [],
-                  "resources": [],
-                  "artifacts": [],
-                  "properties": [],
-                  "run_instance_count": null,
-                  "timeout": 0,
-                  "tasks": [
-                    {
-                      "type": "exec",
-                      "command": "ls"
-                    }
-                  ]
+                  "type": "exec",
+                  "command": "ls"
                 }
               ]
             }
