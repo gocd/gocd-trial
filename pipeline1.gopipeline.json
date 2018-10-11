@@ -1,12 +1,12 @@
 {
   "format_version" : 1,
-  "name": "firstpipe",
+  "name": "build_test",
   "environment_variables": [ 
     {
       "name": "TEST_NUM"
     }
                            ],
-  "group" : "Pipeline_group",
+  "group" : "pipeline_group",
   "materials": [
     {
       "url": "https://github.com/arvindsv/gocd-starter-template-test.git",
