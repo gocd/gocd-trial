@@ -49,7 +49,9 @@
               "command": "ls"
             }
           ]
-        },
+        }
+      ],
+      "stages": [
         {
           "name": "deploy",
           "fetch_materials": true,
