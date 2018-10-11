@@ -12,7 +12,10 @@
       "pipeline": "acceptance_tests",
       "stage": "build",
       "name": "dependency_3",
-      "type": "dependency",
+      "type": "dependency"
+
+    },
+    {
       "pipeline": "performance_tests",
       "stage": "build",
       "name": "dependency_4",
