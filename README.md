@@ -75,9 +75,20 @@ You may see a "starting" message, if so, wait a few minutes for the server and a
 
 ## Use 
 
-This GoCD server has been configured using GoCD's config as repo feature. The configuration is located in this repository If you'd like to change the configuration clone this repo, update the config.xml to point at your cloned repository and update the files named xxxx.gopipeline.json.
+This GoCD server has been configured using GoCD's config as repo feature. The configuration is located in this repository. 
 
-The build_test pipeline has been configured to use repository as the material. If you'd like to commit to the repository to kick off the pipelines clone this repo, update build_test.gopipeline.json to point to your cloned repository and make a commit a change.  
+To change the configuration of the server
+
+* clone this repo
+* update the cruise-config.xml to point at your cloned repository 
+* update the files named xxxx.gopipeline.json to reconfigure the server 
+
+The build_test pipeline has been configured to use this repository as the material. 
+
+To kick off the pipelines in this configuration 
+
+* update the build_test.gopipeline.json to point to your cloned repository
+* commit to your cloned repository  
 
 ## Shut down
 
