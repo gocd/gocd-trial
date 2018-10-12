@@ -71,7 +71,7 @@ Access the server by going to: http://localhost:8153
 
 You may see a "starting" message, if so, wait a few minutes for the server and agent to start. Once the server is ready to try you will see an example pipeline. 
 
-![GoCD Trial](https://github.com/arvindsv/gocd-starter-template-test/blob/master/images/GoCD_Docker_Template_image.png)
+![GoCD Trial](/images/GoCD_Docker_Template_image_1.png)
 
 ## Use 
 
