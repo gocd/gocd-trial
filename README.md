@@ -6,6 +6,8 @@ Table of Contents
   * [How to use](#how-to-use)
   * [Dependencies](#dependencies)
   * [Installation](#installation)
+  * [Use](#use)
+  * [Shutdown](#shutdown)
   * [License](#license) 
  
 ## How to use 
@@ -70,6 +72,14 @@ Access the server by going to: http://localhost:8153
 You may see a "starting" message, if so, wait a few minutes for the server and agent to start. Once the server is ready to try you will see an example pipeline. 
 
 ![GoCD Trial](https://github.com/arvindsv/gocd-starter-template-test/blob/master/images/GoCD_Docker_Template_image.png)
+
+## Use 
+
+This GoCD server has been configured using GoCD's config as repo feature. The configuration is located in this repository If you'd like to change the configuration clone this repo, update the config.xml to point at your cloned repository and update the files named xxxx.gopipeline.json.
+
+The build_test pipeline has been configured to use repository as the material. If you'd like to commit to the repository to kick off the pipelines clone this repo, update build_test.gopipeline.json to point to your cloned repository and make a commit a change.  
+
+## Shut down
 
 When finished trying GoCD to bring the server down, by typing:
 
