@@ -79,11 +79,11 @@ This GoCD server has been configured using GoCD's [config as repo feature](https
 
 To change the configuration of the server
 
-* clone this repo
+* clone this repository 
 * update the data/config/cruise-config.xml to point at your cloned repository 
 * update the files named xxxx.gopipeline.json to reconfigure the server 
 
-The build_test pipeline has been configured to use this repository as the material. 
+The build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html). 
 
 To kick off the pipelines in this configuration 
 
