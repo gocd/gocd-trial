@@ -80,7 +80,7 @@ This GoCD server has been configured using GoCD's config as repo feature. The co
 To change the configuration of the server
 
 * clone this repo
-* update the cruise-config.xml to point at your cloned repository 
+* update the data/config/cruise-config.xml to point at your cloned repository 
 * update the files named xxxx.gopipeline.json to reconfigure the server 
 
 The build_test pipeline has been configured to use this repository as the material. 
