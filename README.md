@@ -75,7 +75,7 @@ You may see a "starting" message, if so, wait a few minutes for the server and a
 
 ## Use 
 
-This GoCD server has been configured using GoCD's config as repo feature. The configuration is located in this repository. 
+This GoCD server has been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html). The configuration is located in this repository. 
 
 To change the configuration of the server
 
