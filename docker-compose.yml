@@ -11,6 +11,8 @@ services:
       - ./data:/godata
       - ./data/home:/home/go
 
+    depends_on:
+      - "gitserver"
 
   agent:
     image: gocd/gocd-agent-alpine-3.8:v18.9.0
@@ -24,3 +26,13 @@ services:
 
     depends_on:
       - "server"
+      - "gitserver"
+
+  gitserver:
+    image: cirocosta/gitserver-http:latest
+
+    ports:
+      - "8155:80"
+
+    volumes:
+      - ./repositories:/var/lib/initial

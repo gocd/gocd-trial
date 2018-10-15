@@ -1,11 +1,11 @@
 {
   "format_version" : 1,
   "name": "performance_tests",
-  "environment_variables": [ 
+  "environment_variables": [
     {
       "name": "TEST_NUM"
     }
-                           ],
+  ],
   "group" : "Build_and_Deploy",
   "materials": [
     {

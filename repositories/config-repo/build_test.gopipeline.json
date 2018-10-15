@@ -1,7 +1,7 @@
 {
   "format_version" : 1,
-  "name": "acceptance_tests",
-  "environment_variables": [ 
+  "name": "build_test",
+  "environment_variables": [
     {
       "name": "TEST_NUM"
     }
@@ -9,10 +9,8 @@
   "group" : "Build_and_Deploy",
   "materials": [
     {
-      "pipeline": "build_test",
-      "stage": "build",
-      "name": "dependency_1",
-      "type": "dependency"
+      "url": "https://github.com/arvindsv/gocd-starter-template-test.git",
+      "type": "git"
     }
   ],
   "stages": [
