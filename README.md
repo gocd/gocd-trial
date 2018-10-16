@@ -92,11 +92,13 @@ To kick off the pipelines in this configuration
 * touch tmp.txt ; git add tmp.txt
 * commit to your cloned repository  
 
-$ git clone http://localhost:8155/git/config-repo.git/ 
+```
 $ touch tmp.txt
 $ git add tmp.txt
 $ git commit -m "first commit"
 $ git push
+
+```
 
 ## Shut down
 
