@@ -97,10 +97,10 @@ To kick off the pipelines in this configuration
 * commit to your cloned repository  
 
 ```
-$ touch tmp.txt
-$ git add tmp.txt
-$ git commit -m "first commit"
-$ git push
+touch tmp.txt
+git add tmp.txt
+git commit -m "first commit"
+git push
 
 ```
 
