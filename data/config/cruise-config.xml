@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="113">
-  <server artifactsdir="artifacts" agentAutoRegisterKey="agent-autoregister-key" commandRepositoryLocation="default">
-    <backup emailOnSuccess="true" emailOnFailure="true" />
-  </server>
+<cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="108">
+  <server artifactsdir="artifacts" agentAutoRegisterKey="agent-autoregister-key" webhookSecret="872a0d3b-a373-4ad6-b4be-3073f82ed32b" commandRepositoryLocation="default" serverId="c8a54748-fc46-4540-85d2-bf12e4de12dc" tokenGenerationKey="c27cfad2-5f4a-4925-b6f5-061d0c27d3e0" />
   <config-repos>
-    <config-repo pluginId="json.config.plugin" id="demo-config-repo">
-      <git url="https://github.com/arvindsv/gocd-starter-template-test" />
+    <config-repo pluginId="json.config.plugin" id="repo1">
+      <git url="https://github.com/arvindsv/gocd-starter-template-test.git" />
     </config-repo>
   </config-repos>
-  <pipelines group="defaultGroup">
-    <pipeline name="Test">
-      <materials>
-        <git url="https://github.com/gocd-contrib/getting-started-repo" />
-      </materials>
-      <stage name="defaultStage">
-        <jobs>
-          <job name="defaultJob">
-            <tasks>
-              <exec command="./build" />
-            </tasks>
-          </job>
-        </jobs>
-      </stage>
-    </pipeline>
-  </pipelines>
+  <pipelines group="pipeline_group_4" />
+  <pipelines group="pipeline_group_3" />
+  <pipelines group="pipeline_group_2" />
+  <pipelines group="pipeline_group_1" />
+  <pipelines group="Build_and_Deploy" />
+  <environments>
+    <environment name="example" />
+    <environment name="Test-ENV" />
+  </environments>
+  <agents>
+    <agent hostname="ca8cf23428e1" ipaddress="172.18.0.3" uuid="1414c525-5fe6-4f90-8754-b2abdc70458b" />
+    <agent hostname="f4486d30edc8" ipaddress="172.19.0.3" uuid="9961b9e0-a12a-403d-8c8e-58b7bd434a92" />
+    <agent hostname="6b5a10ed06da" ipaddress="172.18.0.3" uuid="59480104-eb6d-4efe-948a-d15f805505df" />
+    <agent hostname="e93c0afad48b" ipaddress="172.18.0.3" uuid="4071870e-2fd3-4ebf-b362-aa0ea3915239" />
+    <agent hostname="74bf3c9f535d" ipaddress="172.19.0.3" uuid="2aa7fdcd-d111-4ce2-aa12-5ea579b51ce7" />
+  </agents>
 </cruise>
