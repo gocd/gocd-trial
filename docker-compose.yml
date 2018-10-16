@@ -29,10 +29,10 @@ services:
       - "gitserver"
 
   gitserver:
-    image: cirocosta/gitserver-http:latest
+    image: ynohat/git-http-backend
 
     ports:
       - "8155:80"
 
     volumes:
-      - ./repositories:/var/lib/initial
+      - ./repositories:/git
