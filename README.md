@@ -77,7 +77,7 @@ You may see a "starting" message, if so, wait a few minutes for the server and a
 
 This GoCD server has been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html). The configuration is located in this repository. 
 
-You can view a value stream map of these pipelines at http://localhost:8153/go/pipelines/value_stream_map/build_test/29
+You can view a value stream map of these pipelines at http://localhost:8153/go/pipelines/value_stream_map/deploy/23
 
 To change the configuration of the server
 
