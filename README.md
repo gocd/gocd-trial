@@ -14,7 +14,7 @@ Table of Contents
 
 This template is intended to be used to trial GoCD. It is *not* intended for production use. 
 
-Once you start the GoCD server it will show you example pipelines as well as execution data and analytics.
+Once you start the GoCD server it will show you example pipelines as well as execution data and value stream maps.
 
 Use this template in combination with the [GoCD documentation](https://www.gocd.org/getting-started/part-1/) to understand more about how GoCD can be configured and used to meet your needs. 
 
@@ -76,6 +76,8 @@ You may see a "starting" message, if so, wait a few minutes for the server and a
 ## Use 
 
 This GoCD server has been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html). The configuration is located in this repository. 
+
+You can view a value stream map of these pipelines at http://localhost:8153/go/pipelines/value_stream_map/build_test/29
 
 To change the configuration of the server
 
