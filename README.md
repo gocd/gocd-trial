@@ -89,8 +89,14 @@ The build_test pipeline has been configured to use this repository as the [mater
 
 To kick off the pipelines in this configuration 
 
-* update the build_test.gopipeline.json to point to your cloned repository
+* touch tmp.txt ; git add tmp.txt
 * commit to your cloned repository  
+
+$ git clone http://localhost:8155/git/config-repo.git/ 
+$ touch tmp.txt
+$ git add tmp.txt
+$ git commit -m "first commit"
+$ git push
 
 ## Shut down
 
