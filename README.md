@@ -118,11 +118,11 @@ git add deploy.gopipeline.json
 git commit -m "updated configuration"
 
 ```
-If you return to  http://localhost:8153 you will see that name of the pipeline "build_test" has changed to "build_test1". As the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the pipelines are now running. 
+If you return to  http://localhost:8153 you will see that name of the pipeline "deploy" has changed to "deployment". As the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the pipelines are now running. 
 
 ## Run builds
 
-You can also kick off the build pipelines, by typing:
+You can also kick off the pipelines, by typing:
 
 ```
 cd gocd-trial
@@ -149,7 +149,7 @@ When finished trying GoCD to bring the server down, by typing:
 docker-compose down
 ```
 
-#License
+# License
 
 ```plain
 Copyright 2018, ThoughtWorks, Inc.
