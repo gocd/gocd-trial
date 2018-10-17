@@ -25,7 +25,7 @@ If you need support while trying GoCD feel free chat to us on [Gitter](https://g
 
 * Install Git 
 * Install Docker 
-* Install Docker Compose (or Docker Stack)
+* Install Docker Compose 
 * Ensure that Docker is running 
 
 ## Installation
@@ -35,13 +35,13 @@ Open terminal
 Clone the repo, by typing:
 
 ```
-git clone https://github.com/arvindsv/gocd-starter-template-test.git
+git clone https://github.com/arvindsv/gocd-trial.git
 ```
 
 Navigate to the template directory, by typing: 
 
 ```
-cd gocd-starter-template-test
+cd gocd-trial
 ```
 
 
@@ -49,12 +49,7 @@ Start the GoCD server, by typing:
 
 ```
 docker-compose up -d
-```
 
-Or
-
-```
-docker stack deploy -c docker-compose.yml gocd
 ```
 
 The server will start and you will see 
@@ -79,22 +74,18 @@ This GoCD server has been configured using GoCD's [config as repo feature](https
 
 You can view a value stream map of these pipelines at http://localhost:8153/go/pipelines/value_stream_map/deploy/23
 
-To change the configuration of the server
-
-* clone this repository 
-* update the data/config/cruise-config.xml to point at your cloned repository 
+Change the configuration of the GoCD server, by typing: 
 
 ```
-
+cd gocd-trial
+git clone http://localhost:8155/git/config-repo.git/ 
+update the files named xxxx.gopipeline.json to reconfigure the server
+commit and push the updated files 
 ```
-* update the files named xxxx.gopipeline.json to reconfigure the server 
 
 The build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html). 
 
-To kick off the pipelines in this configuration 
-
-* touch tmp.txt ; git add tmp.txt
-* commit to your cloned repository  
+Kick off the pipelines in this configuration, by typing:
 
 ```
 touch tmp.txt
