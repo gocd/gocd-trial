@@ -56,9 +56,10 @@ The server will start and you will see:
 
 
 ```
-Creating gocd-starter-template-test-master_server_1 ... done
-Creating gocd-starter-template-test-master_agent_1  ... done
-
+Creating network "gocd-trial_default" with the default driver
+Creating gocd-trial_gitserver_1 ... done
+Creating gocd-trial_server_1    ... done
+Creating gocd-trial_agent_1     ... done
 ```
 
 Access the server by going to: http://localhost:8153
@@ -86,7 +87,7 @@ cd gocd-trial
 ```
 ```
 
-git clone http://localhost:8155/git/config-repo.git/
+git clone http://localhost:8155/git/repo1.git/
 ```
 
 ```
