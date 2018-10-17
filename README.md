@@ -14,7 +14,7 @@ Table of Contents
 
 This template is intended to be used to trial GoCD. It is *not* intended for production use. 
 
-Once you start the GoCD server it will show you example pipelines as well as execution data and analytics.
+Once you start the GoCD server it will show you example pipelines as well as execution data and value stream maps.
 
 Use this template in combination with the [GoCD documentation](https://www.gocd.org/getting-started/part-1/) to understand more about how GoCD can be configured and used to meet your needs. 
 
@@ -77,19 +77,32 @@ You may see a "starting" message, if so, wait a few minutes for the server and a
 
 This GoCD server has been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html). The configuration is located in this repository. 
 
+You can view a value stream map of these pipelines at http://localhost:8153/go/pipelines/value_stream_map/deploy/23
+
 To change the configuration of the server
 
-* cd into your local copy of the cloned repo
-* git clone http://localhost:8155/git/config-repo.git/ 
-* update the files named xxxx.gopipeline.json to reconfigure the server
-* commit and push the updated files 
+* clone this repository 
+* update the data/config/cruise-config.xml to point at your cloned repository 
 
-The build_test pipeline has been configured to use this repository as the [material] (https://docs.gocd.org/current/configuration/quick_pipeline_setup.html). 
+```
+
+```
+* update the files named xxxx.gopipeline.json to reconfigure the server 
+
+The build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html). 
 
 To kick off the pipelines in this configuration 
 
 * touch tmp.txt ; git add tmp.txt
-* commit to your locally cloned repository  
+* commit to your cloned repository  
+
+```
+touch tmp.txt
+git add tmp.txt
+git commit -m "first commit"
+git push
+
+```
 
 ## Shut down
 
