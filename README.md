@@ -6,11 +6,11 @@ Table of Contents
   * [How to use](#how-to-use)
   * [Dependencies](#dependencies)
   * [Installation](#installation)
-  * [Use](#use)
+  * [Use GoCD](#use-gocd)
   * [Shutdown](#shutdown)
   * [License](#license) 
  
-## How to use 
+# How to use 
 
 This template is intended to be used to trial GoCD. It is *not* intended for production use. 
 
@@ -21,14 +21,14 @@ Use this template in combination with the [GoCD documentation](https://www.gocd.
 If you need support while trying GoCD feel free chat to us on [Gitter](https://gitter.im/gocd/gocd) or join our [Google Group](https://groups.google.com/forum/#!forum/go-cd).
 
 
-## Dependencies
+# Dependencies
 
 * Install Git 
 * Install Docker 
 * Install Docker Compose 
 * Ensure that Docker is running 
 
-## Installation
+# Installation
 
 Open terminal
 
@@ -52,7 +52,7 @@ docker-compose up -d
 
 ```
 
-The server will start and you will see 
+The server will start and you will see: 
 
 
 ```
@@ -61,41 +61,76 @@ Creating gocd-starter-template-test-master_agent_1  ... done
 
 ```
 
-
 Access the server by going to: http://localhost:8153
 
 You may see a "starting" message, if so, wait a few minutes for the server and agent to start. Once the server is ready to try you will see an example pipeline. 
 
 ![GoCD Trial](/images/GoCD_Docker_Template_image_1.png)
 
-## Use 
+# Use GoCD
 
-This GoCD server has been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html). The configuration is located in this repository. 
+Now would be a good time to take a look at [GoCD documentation](https://www.gocd.org/getting-started/part-1/) to understand what you are looking at. 
+
+## Value stream map
 
 You can view a value stream map of these pipelines at http://localhost:8153/go/pipelines/value_stream_map/deploy/23
+
+## Update the configuration
+
+This GoCD server has been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html). The configuration is located in this repository. 
 
 Change the configuration of the GoCD server, by typing: 
 
 ```
 cd gocd-trial
-git clone http://localhost:8155/git/config-repo.git/ 
-update the files named xxxx.gopipeline.json to reconfigure the server
-commit and push the updated files 
+```
 ```
 
-The build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html). 
+git clone http://localhost:8155/git/config-repo.git/
+```
 
-Kick off the pipelines in this configuration, by typing:
+```
+cd repo1
+```
+```
+open build_test.gopipeline.json
 
+```
+CHANGE "name": "build_test", to "name": "build_test1",
+
+```
+git add build_test.gopipeline.json 
+
+```
+```
+
+git commit -m "updated configuration"
+
+```
+If you return to  http://localhost:8153 you will see that name of the pipeline "build_test" has changed to "build_test1". As the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the pipelines are now running. 
+
+## Run builds
+
+You can also kick off the build pipelines, by typing:
+
+```
+cd gocd-trial
+```
 ```
 touch tmp.txt
+```
+```
 git add tmp.txt
+```
+```
 git commit -m "first commit"
+```
+```
 git push
 
 ```
 
-## Shut down
+# Shutdown
 
 When finished trying GoCD to bring the server down, by typing:
 
@@ -103,7 +138,7 @@ When finished trying GoCD to bring the server down, by typing:
 docker-compose down
 ```
 
-## License
+#License
 
 ```plain
 Copyright 2018, ThoughtWorks, Inc.
