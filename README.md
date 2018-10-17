@@ -93,17 +93,28 @@ git clone http://localhost:8155/git/config-repo.git/
 cd repo1
 ```
 ```
-open build_test.gopipeline.json
+open deploy.gopipeline.json
 
 ```
-CHANGE "name": "build_test", to "name": "build_test1",
+Edit:
 
 ```
-git add build_test.gopipeline.json 
+"name": "deploy", 
+```
+
+to be
+
+```
+"name": "deployment",
+```
+
+Return to terminal, type: 
+
+```
+git add deploy.gopipeline.json
 
 ```
 ```
-
 git commit -m "updated configuration"
 
 ```
