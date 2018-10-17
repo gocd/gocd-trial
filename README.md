@@ -99,14 +99,21 @@ open deploy.gopipeline.json
 ```
 Edit:
 
-```
-"name": "deploy", 
+```javascript
+{
+  "format_version": 1,
+  "name": "deploy",
+  "environment_variables": [
 ```
 
 to be
 
-```
-"name": "deployment",
+```javascript
+{
+  "format_version": 1,
+  "name": "deployment",
+  "environment_variables": [
+  
 ```
 
 Return to terminal, type: 
