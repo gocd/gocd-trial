@@ -118,15 +118,17 @@ git add deploy.gopipeline.json
 git commit -m "updated configuration"
 
 ```
+
+```
+git push
+
+```
 If you return to  http://localhost:8153 you will see that name of the pipeline "deploy" has changed to "deployment". As the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the pipelines are now running. 
 
 ## Run builds
 
 You can also kick off the pipelines, by typing:
 
-```
-cd gocd-trial
-```
 ```
 touch tmp.txt
 ```
