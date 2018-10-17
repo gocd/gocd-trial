@@ -5,7 +5,7 @@
   </server>
   <config-repos>
     <config-repo pluginId="json.config.plugin" id="demo-config-repo">
-      <git url="http://gitserver/git/config-repo.git" />
+      <git url="http://gitserver/git/repo1.git" />
     </config-repo>
   </config-repos>
   <pipelines group="Build_and_Deploy" />
