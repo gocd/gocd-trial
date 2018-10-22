@@ -80,7 +80,7 @@ You can view a value stream map of these pipelines at http://localhost:8153/go/p
 
 This GoCD server has been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html). The configuration is located in this repository. 
 
-Change the configuration of the GoCD server, by typing: 
+First checkout the configuration repository, by typing: 
 
 ```
 cd gocd-trial
@@ -90,6 +90,8 @@ cd gocd-trial
 git clone http://localhost:8155/git/repo1.git/
 ```
 
+Then open the configuration file, by typing: 
+
 ```
 cd repo1
 ```
@@ -97,7 +99,7 @@ cd repo1
 open deploy.gopipeline.json
 
 ```
-Edit:
+Change the configuration and make the first deploy stage manual, by changing: 
 
 ```javascript
 {
@@ -127,7 +129,7 @@ Edit:
     },
 ```
 
-to be
+to be:
 
 ```javascript
   {
