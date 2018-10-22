@@ -130,12 +130,17 @@ Edit:
 to be
 
 ```javascript
- {
+  {
       "name": "ready_to_deploy_stage",
       "fetch_materials": true,
       "never_cleanup_artifacts": false,
       "clean_working_directory": false,
       "environment_variables": [],
+      "approval": {
+        "type": "manual",
+        "roles": [],
+        "users": []
+      },
       "jobs": [
         {
           "name": "ready_to_deploy_job",
