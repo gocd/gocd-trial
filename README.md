@@ -101,18 +101,60 @@ Edit:
 
 ```javascript
 {
-  "format_version": 1,
-  "name": "deploy",
-  "environment_variables": [
+      "name": "ready_to_deploy_stage",
+      "fetch_materials": true,
+      "never_cleanup_artifacts": false,
+      "clean_working_directory": false,
+      "environment_variables": [],
+      "jobs": [
+        {
+          "name": "ready_to_deploy_job",
+          "environment_variables": [],
+          "tabs": [],
+          "resources": [],
+          "artifacts": [],
+          "properties": [],
+          "run_instance_count": null,
+          "timeout": 0,
+          "tasks": [
+            {
+              "type": "exec",
+              "command": "ls"
+            }
+          ]
+        }
+      ]
+    },
 ```
 
 to be
 
 ```javascript
-{
-  "format_version": 1,
-  "name": "deployment",
-  "environment_variables": [
+ {
+      "name": "ready_to_deploy_stage",
+      "fetch_materials": true,
+      "never_cleanup_artifacts": false,
+      "clean_working_directory": false,
+      "environment_variables": [],
+      "jobs": [
+        {
+          "name": "ready_to_deploy_job",
+          "environment_variables": [],
+          "tabs": [],
+          "resources": [],
+          "artifacts": [],
+          "properties": [],
+          "run_instance_count": null,
+          "timeout": 0,
+          "tasks": [
+            {
+              "type": "exec",
+              "command": "ls"
+            }
+          ]
+        }
+      ]
+    },
   
 ```
 
