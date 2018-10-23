@@ -206,7 +206,7 @@ git commit -m "updated configuration"
 ```
 git push
 ```
-If you return to  http://localhost:8153 you will see that the pipeline "deploy" now has two [manual stages] https://docs.gocd.org/current/configuration/dev_choose_when_stage_runs.html. 
+If you return to  http://localhost:8153 you will see that the pipeline "deploy" now has two [manual stages] (https://docs.gocd.org/current/configuration/dev_choose_when_stage_runs.html). 
 
 Also as the the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the pipelines are now running. 
 
