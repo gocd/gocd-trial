@@ -1,4 +1,4 @@
-# GoCD Trial Docker template 
+# GoCD Trial
 
 Table of Contents
 =================
@@ -7,6 +7,7 @@ Table of Contents
   * [Dependencies](#dependencies)
   * [Installation](#installation)
   * [Use GoCD](#use-gocd)
+  * [Next steps](#next-steps)
   * [Shutdown](#shutdown)
   * [License](#license) 
  
