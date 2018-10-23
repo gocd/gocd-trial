@@ -53,7 +53,12 @@ docker-compose up -d
 
 ```
 
-The server will start and you will see: 
+This starts 3 docker containers that are hosting:
+- GoCD server
+- GoCD agent
+- git server (which is hosting "repo1" that contains the GoCD config and materials for this trial)
+
+You will see: 
 
 
 ```
