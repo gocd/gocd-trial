@@ -85,6 +85,16 @@ You can view a value stream map of these pipelines at http://localhost:8153/go/p
 
 You can make a change to the [materials](https://docs.gocd.org/current/introduction/concepts_in_go.html#materials) in the git repo to kick off the builds and see the pipeline progress, by typing:
 
+First checkout the configuration repository, by typing: 
+
+```
+cd gocd-trial
+```
+```
+
+git clone http://localhost:8155/git/repo1.git/
+```
+
 ```
 touch tmp.txt
 ```
@@ -103,14 +113,14 @@ git push
 
 This GoCD server has been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html). The configuration is located in this repository. 
 
-First checkout the configuration repository, by typing: 
+Navigate to the repo, by typing: 
 
 ```
 cd gocd-trial
 ```
-```
 
-git clone http://localhost:8155/git/repo1.git/
+```
+cd repo1
 ```
 
 Then open the configuration file, by typing: 
