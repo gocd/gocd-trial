@@ -74,7 +74,7 @@ Now would be a good time to take a look at [GoCD documentation](https://www.gocd
 
 ## Value stream map
 
-You can view a value stream map of these pipelines at http://localhost:8153/go/pipelines/value_stream_map/deploy/23
+You can view a value stream map of these pipelines at http://localhost:8153/go/pipelines/value_stream_map/deploy/1
 
 ## Update the configuration
 
@@ -180,7 +180,7 @@ git commit -m "updated configuration"
 git push
 
 ```
-If you return to  http://localhost:8153 you will see that the pipeline "deploy" now has two manual stages. Also as the the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the pipelines are now running. 
+If you return to  http://localhost:8153 you will see that the pipeline "deploy" now has two [manual stages] https://docs.gocd.org/current/configuration/dev_choose_when_stage_runs.html. Also as the the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the pipelines are now running. 
 
 ## Run builds
 
