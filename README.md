@@ -12,11 +12,11 @@ Table of Contents
  
 # How to use 
 
-This template is intended to be used to trial GoCD. It is *not* intended for production use. 
+This trial is intended to be used to quickly and easily try out GoCD. It is *not* intended for production use. 
 
-Once you start the GoCD server it will show you example pipelines as well as execution data and value stream maps.
+Once you start the GoCD trial it will show you example pipelines as well as execution data and value stream maps. You will also be able to edit the configuration and run builds. 
 
-Use this template in combination with the [GoCD documentation](https://www.gocd.org/getting-started/part-1/) to understand more about how GoCD can be configured and used to meet your needs. 
+Use this template in combination with the [GoCD documentation](https://www.gocd.org/getting-started/part-1/) to understand more about GoCD's capabilities. 
 
 If you need support while trying GoCD feel free chat to us on [Gitter](https://gitter.im/gocd/gocd) or join our [Google Group](https://groups.google.com/forum/#!forum/go-cd).
 
@@ -199,6 +199,12 @@ git commit -m "first commit"
 git push
 
 ```
+
+# Next steps
+
+This GoCD trial has given you a quick, yet limited introduction to GoCD. 
+
+If you would like to understand more about the capabilities of GoCD and try them out on your own project we recommend downloading and [installing GoCD](https://www.gocd.org/download) and following our complete [introduction](https://www.gocd.org/getting-started/part-1/) to getting up your own GoCD server. 
 
 # Shutdown
 
