@@ -89,11 +89,12 @@ First checkout the configuration repository, by typing:
 ```
 cd gocd-trial
 ```
-
 ```
 git clone http://localhost:8155/git/repo1.git/
 ```
-
+```
+cd repo1
+```
 ```
 touch tmp.txt
 ```
@@ -116,7 +117,6 @@ Navigate to the repo, by typing:
 ```
 cd gocd-trial
 ```
-
 ```
 cd repo1
 ```
