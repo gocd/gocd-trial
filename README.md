@@ -49,7 +49,6 @@ Start the GoCD server, by typing:
 
 ```
 docker-compose up -d
-
 ```
 
 This starts 3 docker containers that are hosting:
@@ -90,8 +89,8 @@ First checkout the configuration repository, by typing:
 ```
 cd gocd-trial
 ```
-```
 
+```
 git clone http://localhost:8155/git/repo1.git/
 ```
 
@@ -106,7 +105,6 @@ git commit -m "first commit"
 ```
 ```
 git push
-
 ```
 
 ## Update the configuration
@@ -130,7 +128,6 @@ cd repo1
 ```
 ```
 open deploy.gopipeline.json
-
 ```
 Change the configuration and make the first deploy stage manual, by changing: 
 
@@ -202,16 +199,12 @@ Return to terminal, type:
 
 ```
 git add deploy.gopipeline.json
-
 ```
 ```
 git commit -m "updated configuration"
-
 ```
-
 ```
 git push
-
 ```
 If you return to  http://localhost:8153 you will see that the pipeline "deploy" now has two [manual stages] https://docs.gocd.org/current/configuration/dev_choose_when_stage_runs.html. Also as the the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the pipelines are now running. 
 
