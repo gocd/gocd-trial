@@ -82,7 +82,7 @@ You can view a value stream map of these pipelines at http://localhost:8153/go/p
 
 ## Run builds
 
-You can make a change to the [materials](https://docs.gocd.org/current/introduction/concepts_in_go.html#materials) in the git repo to kick off the builds and see the pipeline progress, by typing:
+You can make a change to the [materials](https://docs.gocd.org/current/introduction/concepts_in_go.html#materials) in the git repo to kick off the builds and see the pipeline progress.
 
 First checkout the configuration repository, by typing: 
 
@@ -92,6 +92,9 @@ cd gocd-trial
 ```
 git clone http://localhost:8155/git/repo1.git/
 ```
+
+Next navigate to the repo and make a change, by typing:
+
 ```
 cd repo1
 ```
@@ -203,7 +206,9 @@ git commit -m "updated configuration"
 ```
 git push
 ```
-If you return to  http://localhost:8153 you will see that the pipeline "deploy" now has two [manual stages] https://docs.gocd.org/current/configuration/dev_choose_when_stage_runs.html. Also as the the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the pipelines are now running. 
+If you return to  http://localhost:8153 you will see that the pipeline "deploy" now has two [manual stages] https://docs.gocd.org/current/configuration/dev_choose_when_stage_runs.html. 
+
+Also as the the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the pipelines are now running. 
 
 # Next steps
 
