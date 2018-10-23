@@ -124,9 +124,6 @@ cd repo1
 Then open the configuration file, by typing: 
 
 ```
-cd repo1
-```
-```
 open deploy.gopipeline.json
 ```
 Change the configuration and make the first deploy stage manual, by changing: 
