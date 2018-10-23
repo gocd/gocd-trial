@@ -21,7 +21,6 @@ Use this template in combination with the [GoCD documentation](https://www.gocd.
 
 If you need support while trying GoCD feel free chat to us on [Gitter](https://gitter.im/gocd/gocd) or join our [Google Group](https://groups.google.com/forum/#!forum/go-cd).
 
-
 # Dependencies
 
 * Install Git 
@@ -81,6 +80,24 @@ Now would be a good time to take a look at [GoCD documentation](https://www.gocd
 ## Value stream map
 
 You can view a value stream map of these pipelines at http://localhost:8153/go/pipelines/value_stream_map/deploy/1
+
+## Run builds
+
+You can make a change to the [materials](https://docs.gocd.org/current/introduction/concepts_in_go.html#materials) in the git repo to kick off the builds and see the pipeline progress, by typing:
+
+```
+touch tmp.txt
+```
+```
+git add tmp.txt
+```
+```
+git commit -m "first commit"
+```
+```
+git push
+
+```
 
 ## Update the configuration
 
@@ -187,24 +204,6 @@ git push
 
 ```
 If you return to  http://localhost:8153 you will see that the pipeline "deploy" now has two [manual stages] https://docs.gocd.org/current/configuration/dev_choose_when_stage_runs.html. Also as the the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the pipelines are now running. 
-
-## Run builds
-
-You can also kick off the pipelines, by typing:
-
-```
-touch tmp.txt
-```
-```
-git add tmp.txt
-```
-```
-git commit -m "first commit"
-```
-```
-git push
-
-```
 
 # Next steps
 
