@@ -218,7 +218,7 @@ If you would like to understand more about the capabilities of GoCD and try them
 
 # Shutdown
 
-When finished trying GoCD to bring the server down, by typing:
+When finished trying GoCD bring the server down, by typing:
 
 ```
 docker-compose down
