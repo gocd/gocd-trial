@@ -58,7 +58,7 @@ then
 	not_in_topic=`git rev-list "^$topic" master`
 	if test -z "$not_in_topic"
 	then
-		echo >&2 "$topic is already up to date with master"
+		echo >&2 "$topic is already up-to-date with master"
 		exit 1 ;# we could allow it, but there is no point.
 	else
 		exit 0
@@ -88,7 +88,9 @@ else
 	exit 1
 fi
 
-<<\DOC_END
+exit 0
+
+################################################################
 
 This sample hook safeguards topic branches that have been
 published from being rewound.
@@ -165,5 +167,3 @@ To compute (2):
 	git rev-list master..topic
 
 	if this is empty, it is fully merged to "master".
-
-DOC_END

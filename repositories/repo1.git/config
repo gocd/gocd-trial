@@ -3,6 +3,5 @@
 	filemode = true
 	bare = true
 	ignorecase = true
-	precomposeunicode = true
 [http]
 	receivepack = true
