@@ -68,7 +68,7 @@ Creating gocd-trial_agent_1     ... done
 
 Access the server by going to: http://localhost:8153
 
-You may see a "starting" message, if so, wait a few minutes for the server and agent to start. Once the server is ready to try you will see a few example pipelines. These pipelines have been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html)
+You may see a "starting" message, if so, wait a few minutes for the server and agent to start. Once the server is ready to try you will see a few example pipelines. These pipelines have been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html).
 
 ![GoCD Trial](/images/GoCD_Docker_Template_image_1.png)
 
