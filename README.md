@@ -84,7 +84,7 @@ You can view a value stream map of these pipelines at http://localhost:8153/go/p
 
 You can make a change to the [materials](https://docs.gocd.org/current/introduction/concepts_in_go.html#materials) in the git repo to kick off the builds and see the pipeline progress.
 
-Note: As these pipelines are configured as part of [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html), you won't be able to change material configuration from GoCD dashboard and will need to change in the config repo code. Refer [Update the configuration](https://github.com/ankitsri11/gocd-trial#update-the-configuration) section.
+Note: As these pipelines are configured as part of [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html), you won't be able to change material configuration from the GoCD dashboard and will need to change in the config repo code. Refer [Update the configuration](https://github.com/ankitsri11/gocd-trial#update-the-configuration) section.
 
 First checkout the configuration repository, by typing: 
 
