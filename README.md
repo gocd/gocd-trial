@@ -35,7 +35,7 @@ Open terminal
 Clone the repo, by typing:
 
 ```
-git clone https://github.com/arvindsv/gocd-trial.git
+git clone https://github.com/gocd/gocd-trial.git
 ```
 
 Navigate to the template directory, by typing: 

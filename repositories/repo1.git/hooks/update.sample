@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# An example hook script to blocks unannotated tags from entering.
+# An example hook script to block unannotated tags from entering.
 # Called by "git receive-pack" with arguments: refname sha1-old sha1-new
 #
 # To enable this hook, rename this file to "update".
@@ -38,7 +38,7 @@ if [ -z "$GIT_DIR" ]; then
 fi
 
 if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
-	echo "Usage: $0 <ref> <oldrev> <newrev>" >&2
+	echo "usage: $0 <ref> <oldrev> <newrev>" >&2
 	exit 1
 fi
 
