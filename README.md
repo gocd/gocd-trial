@@ -9,7 +9,6 @@ Table of Contents
   * [Use GoCD](#use-gocd)
   * [Next steps](#next-steps)
   * [Shutdown](#shutdown)
-  * [Feedback](#feedback)
   * [License](#license) 
  
 # How to use 
@@ -224,10 +223,6 @@ When finished trying GoCD bring the server down, by typing:
 ```
 docker-compose down
 ```
-
-# Feedback
-
-We want you to be able to try GoCD easily and quickly. If you think we can improve this experience please create an issue or get in touch via [Gitter](https://gitter.im/gocd/gocd) or our [Google Group](https://groups.google.com/forum/#!forum/go-cd).
 
 # License
 

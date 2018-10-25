@@ -29,7 +29,7 @@ services:
       - "gitserver"
 
   gitserver:
-    image: ynohat/git-http-backend
+    image: gocdcontrib/git-http-backend:v2
 
     ports:
       - "8155:80"
