@@ -224,6 +224,10 @@ When finished trying GoCD bring the server down, by typing:
 docker-compose down
 ```
 
+# Feedback
+
+We want you to be able to try GoCD easily and quickly. If you think we can improve this experience please create an issue or get in touch at via [Gitter](https://gitter.im/gocd/gocd) or our [Google Group](https://groups.google.com/forum/#!forum/go-cd).
+
 # License
 
 ```plain
