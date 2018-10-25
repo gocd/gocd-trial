@@ -68,7 +68,7 @@ Creating gocd-trial_agent_1     ... done
 
 Access the server by going to: http://localhost:8153
 
-You may see a "starting" message, if so, wait a few minutes for the server and agent to start. Once the server is ready to try you will see a few example pipelines: 
+You may see a "starting" message, if so, wait a few minutes for the server and agent to start. Once the server is ready to try you will see a few example pipelines. These pipelines have been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html)
 
 ![GoCD Trial](/images/GoCD_Docker_Template_image_1.png)
 
@@ -83,6 +83,8 @@ You can view a value stream map of these pipelines at http://localhost:8153/go/p
 ## Run builds
 
 You can make a change to the [materials](https://docs.gocd.org/current/introduction/concepts_in_go.html#materials) in the git repo to kick off the builds and see the pipeline progress.
+
+Note: As these pipelines are configured as part of [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html), you won't be able to change material configuration from GoCD dashboard and will need to change in the config repo code. Refer [Update the configuration](https://github.com/ankitsri11/gocd-trial#update-the-configuration) section.
 
 First checkout the configuration repository, by typing: 
 
@@ -110,6 +112,8 @@ git commit -m "first commit"
 ```
 git push
 ```
+Once you push the commit, you will see "build_test" pipeline gets triggered and start building. Later, all the other downstream pipelines gets trigger due to configured [pipeline dependency](https://docs.gocd.org/current/configuration/managing_dependencies.html). 
+
 
 ## Update the configuration
 
