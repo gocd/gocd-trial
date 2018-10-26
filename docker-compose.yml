@@ -13,6 +13,9 @@ services:
       - ./scripts/server:/docker-entrypoint.d
       - ./scripts/shared:/shared
 
+    environment:
+      - GO_SERVER_SYSTEM_PROPERTIES=-Dcruise.material.update.interval=2000 -Dmaterial.update.idle.interval=2000
+
     depends_on:
       - "gitserver"
 
