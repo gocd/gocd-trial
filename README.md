@@ -9,6 +9,7 @@ Table of Contents
   * [Use GoCD](#use-gocd)
   * [Next steps](#next-steps)
   * [Shutdown](#shutdown)
+  * [Feedback](#feedback)
   * [License](#license)
 
 # How to use
@@ -68,7 +69,7 @@ Creating gocd-trial_agent_1     ... done
 
 Access the server by going to: http://localhost:8153
 
-You may see a "starting" message, if so, wait a few minutes for the server and agent to start. Once the server is ready to try you will see a few example pipelines. These pipelines have been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html).
+You may see a "starting" message, if so, wait a few minutes for the server and agent to start. Once the server is ready to try you will see a few example pipelines. These pipelines have been configured using GoCD's [pipelines as code feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html).
 
 ![GoCD Trial](/images/GoCD_Docker_Template_image_1.png)
 
@@ -84,7 +85,7 @@ You can view a value stream map of these pipelines at http://localhost:8153/go/p
 
 You can make a change to the [materials](https://docs.gocd.org/current/introduction/concepts_in_go.html#materials) in the git repo to kick off the builds and see the pipeline progress.
 
-Note: As these pipelines are configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html), you won't be able to change the material configuration from the GoCD dashboard. You will need to change the materials by changing the config in the repo. Refer to [updating the configuration](https://github.com/gocd/gocd-trial#update-the-configuration) if you would like to do this.
+Note: As these pipelines are configured using GoCD's [pipelines as code feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html), you won't be able to change the material configuration from the GoCD dashboard. You will need to change the materials by changing the configuration in the repository. Refer to [updating the configuration](https://github.com/gocd/gocd-trial#update-the-configuration) if you would like to do this.
 
 To run builds first checkout the material repository, by typing:
 
@@ -117,7 +118,7 @@ Once you push the commit, you will see "build_test" pipeline gets triggered and 
 
 ## Update the configuration
 
-The GoCD server has been configured using GoCD's [config as repo feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html). The configuration is located in this repository.
+The GoCD server has been configured using GoCD's [pipelines as code feature](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html). The configuration is located in this repository.
 
 To update the configuration, navigate to the repo, by typing:
 
@@ -295,15 +296,15 @@ git push
 ```
 If you return to http://localhost:8153 you will see that the pipeline "deploy" now has three stages.
 
-Also as the the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the pipelines are now running.
+Also as the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also that the other pipelines are now running.
 
 # Next steps
 
 This GoCD trial has given you a quick, yet limited introduction to GoCD.
 
-If you would like to understand more about the capabilities of GoCD and try them out on your own project we recommend downloading and [installing GoCD](https://www.gocd.org/download) and following our complete [introduction](https://www.gocd.org/getting-started/part-1/) to getting up your own GoCD server.
+If you would like to understand more about the capabilities of GoCD and try them out on your own project we recommend downloading and [installing GoCD](https://www.gocd.org/download) and following our complete [introduction](https://www.gocd.org/getting-started/part-1/) to setting up your own GoCD server.
 
-Note: If you did make changes to the trial configuration that you would like to retain and use on your local server please copy the .json files from ../repo1 to your new local server.
+Note: If you made changes to the GoCD trial configuration that you would like to retain and use on your local GoCD server please configure your local server to use the [pipelines as code](https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html) feature and copy the .json files from the repo1 created as part of the trial to your own repo.
 
 # Shutdown
 
@@ -312,6 +313,10 @@ When finished trying GoCD bring the server down, by typing:
 ```
 docker-compose down
 ```
+
+# Feedback 
+
+We want this trial of GoCD to be quick and easy to use. If it was not, or you can see a way to improve it, please submit an issue or chat to us on [Gitter](https://gitter.im/gocd/gocd) or join our [Google Group](https://groups.google.com/forum/#!forum/go-cd).
 
 # License
 
