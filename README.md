@@ -29,6 +29,8 @@ If you need support while trying GoCD feel free chat to us on [Gitter](https://g
 * Install Docker Compose
 * Ensure that Docker is running
 
+**Note: This trial does not currently work on Docker for Windows**
+
 # Installation
 
 Open terminal
@@ -113,7 +115,7 @@ git commit -m "first commit"
 ```
 git push
 ```
-Once you push the commit, you will see "build_test" pipeline gets triggered and start building. Later, all the other downstream pipelines will get trigger as they are configured as [pipeline dependencies](https://docs.gocd.org/current/configuration/managing_dependencies.html).
+Once you push the commit, you will see "build_test" pipeline gets triggered and start building. Later, all the other downstream pipelines will get triggered as they are configured as [pipeline dependencies](https://docs.gocd.org/current/configuration/managing_dependencies.html).
 
 
 ## Update the configuration
@@ -134,7 +136,8 @@ Then open the configuration file, by typing:
 ```
 open deploy.gopipeline.json
 ```
-Change the configuration and add a new stage to the deploy pipeline by *replacing only the stages section of this file  from:*
+
+Change the configuration and add a new stage to the deploy pipeline by *replacing **only the stages section** of this file from:*
 
 ```javascript
 "stages": [
@@ -298,7 +301,7 @@ If you return to http://localhost:8153 you will see that the pipeline "deploy" n
 
 Also as the build_test pipeline has been configured to use this repository as the [material](https://docs.gocd.org/current/configuration/quick_pipeline_setup.html) you will also see that the other pipelines are now running.
 
-Note: This might take couple of minutes to update on the GoCD side.
+Note: This might take couple of minutes to update on GoCD at http://localhost:8153.
 
 # Next steps
 
