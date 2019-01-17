@@ -46,7 +46,7 @@ Navigate to the template directory, by typing:
 ```
 cd gocd-trial
 ```
-
+**Note:** If you are running it on a virtual machine or inside a Docker container, you will need to update /data folder permission under gocd-trial directory to avoid any permission related [issue](https://github.com/gocd/gocd-trial/issues/11). Run `chmod -R o+w data/` before starting the server.
 
 Start the GoCD server, by typing:
 
