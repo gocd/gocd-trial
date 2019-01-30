@@ -1,7 +1,7 @@
 version: "3"
 services:
   server:
-    image: gocd/gocd-server:v18.11.0
+    image: gocd/gocd-server:v19.1.0
 
     ports:
       - "8153:8153"
@@ -20,7 +20,7 @@ services:
       - "gitserver"
 
   agent:
-    image: gocd/gocd-agent-alpine-3.8:v18.11.0
+    image: gocd/gocd-agent-alpine-3.8:v19.1.0
 
     environment:
       - GO_SERVER_URL=https://server:8154/go
