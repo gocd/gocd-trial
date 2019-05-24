@@ -1,3 +1,7 @@
+# Deprecation notice
+
+This repository is deprecated. Please see: https://github.com/gocd-contrib/gocd-trial-launcher instead.
+
 # GoCD Test Drive
 
 Table of Contents
